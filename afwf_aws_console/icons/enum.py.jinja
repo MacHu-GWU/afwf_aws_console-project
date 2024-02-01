@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+
+from ..paths import dir_asset
+
+class {{ class_name}}:
+    {%- for attr, relpath in pairs %}
+    {{ attr }} = dir_asset.joinpath("{{ relpath }}")
+    {%- endfor %}
+{{ "" }}
