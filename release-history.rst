@@ -12,10 +12,12 @@ Backlog
 
 **Bugfixes**
 
-- dynamodb icon doesn't looks right
-
 **Miscellaneous**
 
 
-0.1.1 (2024-01-01)
+0.1.1 (2024-02-01)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Features and Improvements**
+
+- 🚀 First working release.
+- Based on ``aws_console_url_search==0.3.1``.
