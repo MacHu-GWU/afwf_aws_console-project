@@ -1,5 +1,5 @@
 
-.. image:: https://readthedocs.org/projects/afwf-aws-console/badge/?version=latest
+.. .. image:: https://readthedocs.org/projects/afwf-aws-console/badge/?version=latest
     :target: https://afwf-aws-console.readthedocs.io/en/latest/
     :alt: Documentation Status
 
