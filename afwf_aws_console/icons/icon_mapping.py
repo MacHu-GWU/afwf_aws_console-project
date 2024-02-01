@@ -1,5 +1,11 @@
 # -*- coding: utf-8 -*-
 
+"""
+Define the mapping from service / menu id in
+`aws_console_url_search/data.json <https://github.com/MacHu-GWU/aws_console_url_search-project/blob/main/aws_console_url_search/data.json>`_
+to the corresponding ICON.
+"""
+
 import typing as T
 from pathlib_mate import Path
 
@@ -257,11 +263,17 @@ class IconMapping:
 # fmt: on
 
 icon_mapping = {k: v for k, v in IconMapping.__dict__.items() if not k.startswith("_")}
+# lambda is a Python keyword, add special handling to it
 icon_mapping["lambda"] = icon_mapping["lambda_"]
 del icon_mapping["lambda_"]
 
 
 def id_to_icon(id: str) -> T.Optional[Path]:
+    """
+    Given an id, for example, "s3", "s3-buckets", find the corresponding ICON.
+
+    Return None if not found
+    """
     parts = id.split("-", 1)
     # service
     if len(parts) == 1:

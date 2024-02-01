@@ -23,6 +23,11 @@ AWS 官方提供了所有的 Icon 的下载. 你可以到 `AWS Architecture Icon
 
 Icon Path Enum
 ------------------------------------------------------------------------------
-:func:`afwf_aws_console.icons.gen_code.generate_architecture_icons_enum` 函数能够扫描解压后的文件夹, 只选择我们要的低像素 (小于 96x96) 的 PNG, 然后按照文件路径将其拷贝到 ``afwf_aws_console
+:func:`afwf_aws_console.icons.gen_code.generate_architecture_icons_enum` 函数能够扫描解压后的文件夹, 只选择我们要的低像素 (小于 96x96) 的 PNG, 然后按照文件路径将其拷贝到 `afwf_aws_console/icons/assets/ <https://github.com/MacHu-GWU/afwf_aws_console-project/tree/main/afwf_aws_console/icons/asset>`_ 目录下. 然后在 `afwf_aws_console/icons/ <https://github.com/MacHu-GWU/afwf_aws_console-project/tree/main/afwf_aws_console/icons>`_ 模块下创建四个子模块, ``enum_arch_group.py``, ``enum_arch_service.py``, ``enum_category.py``, ``enum_resource.py``. 它们是对所有 ICON 图标路径的枚举.
 
+.. note::
+
+    `debug/code_work.py <https://github.com/MacHu-GWU/afwf_aws_console-project/blob/main/debug/code_work.py>`_ 运行该文件可以重新生成图标 Asset 以及枚举模块. 但是 ``icon_mapping.py`` 模块只由人类修改.
+
+接下来我们就可以在 `afwf_aws_console/icons/icon_mapping.py <https://github.com/MacHu-GWU/afwf_aws_console-project/blob/main/afwf_aws_console/icons/icon_mapping.py>`_ 模块中把 ID 和图标关联起来了.
 
