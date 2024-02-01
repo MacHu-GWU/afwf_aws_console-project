@@ -8,21 +8,9 @@ import attrs
 import afwf.api as afwf
 
 from aws_console_url_search.api import (
-    BaseModel,
-    Service,
-    Menu,
-    load_data,
-    preprocess_query,
-    ServiceDocument,
-    service_downloader,
-    service_index_name,
-    service_dataset,
-    RegionDocument,
-    region_downloader,
-    region_index_name,
-    region_dataset,
+    ConsoleUrlItem,
+    InfoItem,
 )
-from aws_console_url_search.ui_def import ConsoleUrlItem
 from aws_console_url_search.ui_init import ui
 
 from ..icons.icon_mapping import id_to_icon
@@ -86,9 +74,24 @@ class Item(afwf.Item):
         return afwf_item
 
     @classmethod
+    def from_info_item(cls, item: InfoItem):
+        """
+        todo: docstring
+        """
+        return cls(
+            title=item.title,
+            subtitle=item.subtitle,
+        ).set_icon(afwf.IconFileEnum.info)
+
+    @classmethod
     def from_acs_item(cls, item: T_ACS_ITEM):
+        """
+        todo: docstring
+        """
         if isinstance(item, ConsoleUrlItem):
             return cls.from_console_url_item(item)
+        if isinstance(item, InfoItem):
+            return cls.from_info_item(item)
         else:
             raise TypeError(f"Unknown item type: {type(item)}")
 

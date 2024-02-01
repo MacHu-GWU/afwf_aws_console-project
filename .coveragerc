@@ -3,6 +3,7 @@
 [run]
 omit =
     afwf_aws_console/docs/*
+    afwf_aws_console/icons/*
     afwf_aws_console/tests/*
     afwf_aws_console/vendor/*
     afwf_aws_console/_version.py
