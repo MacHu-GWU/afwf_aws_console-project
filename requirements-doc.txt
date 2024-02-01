@@ -181,9 +181,9 @@ decorator==5.1.1 ; python_version >= "3.8" and python_version < "4.0" \
 defusedxml==0.7.1 ; python_version >= "3.8" and python_version < "4.0" \
     --hash=sha256:1bb3032db185915b62d7c6209c5a8792be6a32ab2fedacc84e01b52c51aa3e69 \
     --hash=sha256:a352e7e428770286cc899e2542b6cdaedb2b4953ff269a210103ec58f6198a61
-docfly==2.0.1 ; python_version >= "3.8" and python_version < "4.0" \
-    --hash=sha256:4d8eedded3a7b1c33c30443be5a6ff844b1fc1e234deff07f03c7e41353a5b7c \
-    --hash=sha256:ea74ebd206c964246ea7199a8809e9901885cfa7d59f33b8e10322b76086f124
+docfly==2.0.2 ; python_version >= "3.8" and python_version < "4.0" \
+    --hash=sha256:169701ad4530c37aad15717636fe72a9d3c2b773d870eacf8b24cf5b63f5e078 \
+    --hash=sha256:dce36ef7a5bb282a9e26220e5535180c4522f4632f48993e04c738d2155ecdf7
 docutils==0.19 ; python_version >= "3.8" and python_version < "4.0" \
     --hash=sha256:33995a6753c30b7f577febfc2c50411fec6aac7f7ffeb7c4cfe5991072dcf9e6 \
     --hash=sha256:5e1de4d849fee02c63b040a4a3fd567f4ab104defd8a5511fbbc24a8a017efbc
@@ -383,9 +383,9 @@ pyrsistent==0.20.0 ; python_version >= "3.8" and python_version < "4.0" \
 python-dateutil==2.8.2 ; python_version >= "3.8" and python_version < "4.0" \
     --hash=sha256:0123cacc1627ae19ddf3c27a5de5bd67ee4586fbdd6440d9748f8abb483d3e86 \
     --hash=sha256:961d03dc3453ebbc59dbdea9e4e11c5651520a876d0f4db161e8674aae935da9
-pytz==2023.3.post1 ; python_version >= "3.8" and python_version < "3.9" \
-    --hash=sha256:7b4fddbeb94a1eba4b557da24f19fdf9db575192544270a9101d8509f9f43d7b \
-    --hash=sha256:ce42d816b81b68506614c11e8937d3aa9e41007ceb50bfdcb0749b921bf646c7
+pytz==2023.4 ; python_version >= "3.8" and python_version < "3.9" \
+    --hash=sha256:31d4583c4ed539cd037956140d695e42c033a19e984bfce9964a3f7d59bc2b40 \
+    --hash=sha256:f90ef520d95e7c46951105338d918664ebfd6f1d995bd7d153127ce90efafa6a
 pywin32==306 ; sys_platform == "win32" and platform_python_implementation != "PyPy" and python_version >= "3.8" and python_version < "4.0" \
     --hash=sha256:06d3420a5155ba65f0b72f2699b5bacf3109f36acbe8923765c22938a69dfc8d \
     --hash=sha256:1c73ea9a0d2283d889001998059f5eaaba3b6238f767c9cf2833b13e6a685f65 \

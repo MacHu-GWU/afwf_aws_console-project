@@ -55,7 +55,7 @@ ipython = "8.10.0"
 # generate reStructuredText in Python
 rstobj = "1.2.1"
 # automaticall generate .. toctree directives and API reference doc
-docfly = "2.0.1"
+docfly = "2.0.2"
 # you need to install awscli to upload the documentation website to S3
 # awscli has werid dependency issue, so we install it out side of poetry
 

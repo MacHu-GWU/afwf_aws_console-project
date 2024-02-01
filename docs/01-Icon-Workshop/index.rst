@@ -30,4 +30,3 @@ Icon Path Enum
     `debug/code_work.py <https://github.com/MacHu-GWU/afwf_aws_console-project/blob/main/debug/code_work.py>`_ 运行该文件可以重新生成图标 Asset 以及枚举模块. 但是 ``icon_mapping.py`` 模块只由人类修改.
 
 接下来我们就可以在 `afwf_aws_console/icons/icon_mapping.py <https://github.com/MacHu-GWU/afwf_aws_console-project/blob/main/afwf_aws_console/icons/icon_mapping.py>`_ 模块中把 ID 和图标关联起来了.
-

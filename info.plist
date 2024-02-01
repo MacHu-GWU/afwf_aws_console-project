@@ -90,7 +90,7 @@
 	<key>createdby</key>
 	<string>Sanhe Hu</string>
 	<key>description</key>
-	<string>Open AWS Console</string>
+	<string>An Alfred Workflow can Full Text Search AWS Console and Open it in Browser.</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -287,7 +287,9 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>Sample Alfred Workflow using https://github.com/MacHu-GWU/afwf-project Framework</string>
+	<string>🌟 An Alfred Workflow can Full Text Search AWS Console and Open it in Browser.
+
+This project is based on my project `aws_console_url_search &lt;https://github.com/MacHu-GWU/aws_console_url_search-project&gt;`_, a cross platform, Alfred similar, CLI app that can search AWS Console menu interactively. This project is just a wrapper to integrate ``aws_console_url_search`` with Alfred Workflow.</string>
 	<key>uidata</key>
 	<dict>
 		<key>1F5ADEC7-4ECC-4308-A9ED-57D8DFA7B1B2</key>
@@ -343,7 +345,7 @@
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.6.1</string>
+	<string>0.1.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/MacHu-GWU/afwf_aws_console-project</string>
 </dict>

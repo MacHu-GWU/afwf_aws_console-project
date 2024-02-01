@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 
 """
+Integrate the `aws_console_url_search <https://github.com/MacHu-GWU/aws_console_url_search-project>`_
+with alfred workflow.
 """
 
 import typing as T
@@ -22,6 +24,9 @@ except ImportError:
 
 
 def get_icon_by_key(mapper: dict, key: str) -> T.Optional[afwf.Icon]:
+    """
+    Get alfred icon object by the key (id) from the icon mapping.
+    """
     if key in mapper:
         return afwf.Icon.from_image_file(mapper[key])
     else:
@@ -35,36 +40,19 @@ T_ACS_ITEM = T.Union[
 
 @attrs.define
 class Item(afwf.Item):
-    def copy_arn(self, arn: str):
-        self.variables["copy_arn"] = "y"
-        self.variables["copy_arn_arg"] = arn
-        return self
-
-    def copy_id(self, id: str):
-        self.variables["copy_id"] = "y"
-        self.variables["copy_id_arg"] = id
-        return self
-
-    def copy_name(self, name: str):
-        self.variables["copy_name"] = "y"
-        self.variables["copy_name_arg"] = name
-        return self
+    """
+    Custom ``afwf.Item`` for this project.
+    """
 
     @classmethod
     def from_console_url_item(cls, item: ConsoleUrlItem):
         """
-        .. note::
-
-            The aws_resource_search cli allow user to use F1 to see detail,
-            but we don't want to add this feature in alfred workflow.
-            The zelfred framework allows us to use shortcut key to enter
-            a sub-session, but sub-session in alfred is another script filter,
-            which greatly increase the complexity.
+        todo: docstring
         """
         afwf_item = cls(
             title=item.title,
             subtitle=item.subtitle,
-            # uid=item.uid,
+            # uid=item.uid, # don't enable uid, we don't want Alfred to memorize the order.
             arg=item.variables["url"],
             autocomplete=item.autocomplete,
         ).open_url(item.variables["url"])

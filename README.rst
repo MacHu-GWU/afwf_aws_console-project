@@ -50,4 +50,17 @@
 
 Welcome to ``afwf_aws_console`` Documentation
 ==============================================================================
-This 
+🌟 An Alfred Workflow can Full Text Search AWS Console and Open it in Browser.
+
+This project is based on my project `aws_console_url_search <https://github.com/MacHu-GWU/aws_console_url_search-project>`_, a cross platform, Alfred similar, CLI app that can search AWS Console menu interactively. This project is just a wrapper to integrate ``aws_console_url_search`` with Alfred Workflow.
+
+.. image:: https://github.com/MacHu-GWU/afwf_aws_console-project/assets/6800411/eea82c7a-d57b-4d7a-bd4c-6ba680b24225
+
+.. image:: https://github.com/MacHu-GWU/afwf_aws_console-project/assets/6800411/bbb60572-3ba5-47bd-87b5-153f95f30dd8
+
+
+Installation
+------------------------------------------------------------------------------
+Go to `afwf_aws_console Release <https://github.com/MacHu-GWU/afwf_aws_console-project/releases>`_, download the latest version and double click to install. Then update the path to your Python interpreter in the workflow settings.
+
+.. image:: https://github.com/MacHu-GWU/afwf_aws_console-project/assets/6800411/eae64630-f9d1-441c-a348-f85dfb716b50
